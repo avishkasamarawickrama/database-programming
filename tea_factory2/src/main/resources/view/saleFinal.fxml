@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teafactory.controller.saleFormController">
+   <children>
+      <ImageView fitHeight="831.0" fitWidth="393.0" layoutX="4.0" layoutY="-1.0">
+         <image>
+            <Image url="@../asserts.icon/d171bac12ab1477290fe30840f2aa095.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="80.0" arcWidth="80.0" height="516.0" layoutX="75.0" layoutY="203.0" opacity="0.72" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+      <JFXButton buttonType="RAISED" layoutX="100.0" layoutY="217.0" onAction="#btnCategoryOnAction" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Category" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="295.0" onAction="#btnInvoiceOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Invoice" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="535.0" onAction="#btnSaleOnAction" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #556B2F;" text="Sale" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="254.0" onAction="#btnInventoryOnAction" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Inventory" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="416.0" onAction="#btnTransportOnAction" prefHeight="18.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Transport" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="104.0" layoutY="454.0" onAction="#btnSellerOnAction" prefHeight="18.0" prefWidth="76.0" style="-fx-background-color: #556B2F;" text="Seller" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="493.0" onAction="#btnPaymentsOnAction" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Payments" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="379.0" onAction="#btnOrdersOnAction" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Orders" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="338.0" onAction="#btnReturnsOnAction" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #556B2F;" text="Returns" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="658.0" onAction="#btnCoopmarketOnAction" prefHeight="29.0" prefWidth="124.0" style="-fx-background-color: #556B2F;" text="Co-op Market" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="573.0" onAction="#btnEmployeeOnAction" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: #556B2F;" text="Employee" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="614.0" onAction="#btnCustomerOnAction" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #556B2F;" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="789.0" onAction="#btnSettingsOnAction" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #BDB76B; -fx-background-radius: 50; -fx-border-color: black; -fx-border-radius: 50;" text="Settings" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="273.0" layoutY="788.0" onAction="#btnLogOutOnAction" prefHeight="28.0" prefWidth="100.0" style="-fx-background-color: #BDB76B; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="397.0" layoutY="30.0" prefHeight="800.0" prefWidth="662.0" style="-fx-background-color: brown; -fx-background-radius: 50;">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="831.0" layoutX="-1.0" layoutY="-31.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <DatePicker layoutX="455.0" layoutY="22.0" promptText="2024/5/12" style="-fx-background-radius: black;" />
+            <JFXButton buttonType="RAISED" layoutX="562.0" layoutY="338.0" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="76.0" ripplerFill="#dcdcdc" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="Save " textFill="#37463b">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="527.0" layoutY="716.0" onAction="#btnBackOnAction" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: black;" text="back">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="342.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bag id :" wrappingWidth="90.39999999999998">
+               <font>
+                  <Font name="Serif Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtBagId" layoutX="433.0" layoutY="100.0" prefHeight="13.0" prefWidth="187.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+            <Text layoutX="342.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale date :" wrappingWidth="61.6000122070312">
+               <font>
+                  <Font name="Serif Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSaleDate" layoutX="433.0" layoutY="176.0" prefHeight="13.0" prefWidth="187.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+            <Text layoutX="342.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sale status :" wrappingWidth="61.6000122070312">
+               <font>
+                  <Font name="Serif Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSaleStatus" layoutX="433.0" layoutY="213.0" prefHeight="13.0" prefWidth="187.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+            <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="18.0" onAction="#btnInventoryOnAction" prefHeight="30.0" prefWidth="406.0" style="-fx-background-color: #556B2F;" text="Sale " textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="342.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale no:" wrappingWidth="61.6000122070312">
+               <font>
+                  <Font name="Serif Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSaleNo" layoutX="433.0" layoutY="140.0" prefHeight="13.0" prefWidth="187.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+            <TableView layoutX="14.0" layoutY="470.0" prefHeight="237.0" prefWidth="648.0" style="-fx-border-color: black;">
+               <columns>
+                  <TableColumn fx:id="colBagId" prefWidth="90.39990234375" text="bag id" />
+                  <TableColumn fx:id="colSaleNo" prefWidth="90.39996337890625" text="sale no" />
+                  <TableColumn fx:id="colSaleDate" prefWidth="159.20001220703125" text="sale date" />
+                  <TableColumn fx:id="colSaleStatus" prefWidth="248.800048828125" text="sale status" />
+                  <TableColumn fx:id="colDelete" prefWidth="58.39996337890625" text="dlt" />
+               </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="467.0" layoutY="338.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="76.0" ripplerFill="#dcdcdc" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="clear" textFill="#37463b">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="293.0" layoutY="338.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="76.0" ripplerFill="#dcdcdc" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="update" textFill="#37463b">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="376.0" layoutY="338.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="76.0" ripplerFill="#dcdcdc" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="delete" textFill="#37463b">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="106.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+         <font>
+            <Font name="Times New Roman Bold" size="37.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MORAWAKKORALE TEA FACTORY DISTRIIBUTION SYSTEM">
+         <font>
+            <Font name="Perpetua Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#ead7d7" layoutX="146.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASH BOARD">
+         <font>
+            <Font name="Playbill" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
